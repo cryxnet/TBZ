@@ -7,12 +7,10 @@ users:
     shell: /bin/bash
     lock_passwd: false
     plain_text_passwd: "password"
+
 ssh_pwauth: true
 disable_root: false
 packages:
-  - apache2
-  - curl
-  - wget
-  - php
-  - libapache2-mod-php
-  - php-mysqli
+  - mariadb-server
+runcmd:
+  - sudo mysql -sfu root -e "GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY'password' WITH GRANT OPTION;"

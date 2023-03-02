@@ -1,0 +1,20 @@
+#cloud-config
+users: # This section defines the users that will be created
+  - name: ubuntu # The name of the user to be created
+    sudo: ALL=(ALL) NOPASSWD:ALL # Allows the user to run any command as any user without a password prompt
+    groups: users, admin # Assigns the user to the users and admin groups
+    home: /home/ubuntu # Specifies the home directory for the user
+    shell: /bin/bash # Specifies the default shell for the user
+    lock_passwd: false # Allows the user to log in with a password
+    plain_text_passwd: "password" # Sets the user's password to "password"
+
+  
+ssh_pwauth: true # Enables password authentication for SSH logins
+disable_root: false # Allows the root user to log in
+packages: # This section specifies which packages should be installed
+  - apache2 # Installs the Apache2 web server
+  - curl # Installs the command-line tool for transferring data
+  - wget # Installs the command-line tool for retrieving files from the web
+  - php # Installs the PHP scripting language
+  - libapache2-mod-php # Installs the Apache2 module for PHP
+  - php-mysqli # Installs the PHP MySQLi extension
