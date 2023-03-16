@@ -7,7 +7,6 @@ users:
     shell: /bin/bash
     lock_passwd: false
     plain_text_passwd: "password"
-
 ssh_pwauth: true
 disable_root: false
 packages:

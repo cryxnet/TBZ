@@ -8,7 +8,6 @@ users: # This section defines the users that will be created
     lock_passwd: false # Allows the user to log in with a password
     plain_text_passwd: "password" # Sets the user's password to "password"
 
-  
 ssh_pwauth: true # Enables password authentication for SSH logins
 disable_root: false # Allows the root user to log in
 packages: # This section specifies which packages should be installed

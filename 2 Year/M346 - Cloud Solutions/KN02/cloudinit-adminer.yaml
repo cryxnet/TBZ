@@ -53,16 +53,3 @@ write_files:
       //var_dump($result);
       ?>
     permissions: "0644"
-
-
-#cloud-config
-users:
-  - name: ubuntu
-    sudo: ALL=(ALL) NOPASSWD:ALL
-    groups: users, admin
-    home: /home/ubuntu
-    shell: /bin/bash
-    ssh_authorized_keys:
-        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCB4/e2KkopLrTo+KfbeuKKhuTEpsQ+sgPkpAfQUQP2Eow/aqjhHN6tkQwAj4JgTEZ3z7A33Zi0CSEUHiuki0SJWP6ivXoocsNEfzfXsVLuEt+stO+I7bpT7cl8mF+hC9Dq4E0j/JVvmjpoPL+FmzNv3gFUFO29iZfx9qBJpB8FwYCvcWMDAn3zTLhYVd4qapa3nsf8Eky6RWyMd49vOOUG/IdQY37/wt/yA04yE4sPZBIdilMH6tZ+FCOUY6U7fwYFKUIHqqnyxJkPEXB7qDttcmWLrk1UzxH0nonSNjIEg0T8vFzUVKEMhCsVlQOnGOBwBmIABFpEXrut+bcCt6FF aws-key
-    ssh_pwauth: false
-    disable_root: false
