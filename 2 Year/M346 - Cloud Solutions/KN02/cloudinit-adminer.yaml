@@ -33,7 +33,7 @@ write_files:
     content: |
       <?php
       //database
-      $servername = "127.0.0.1";
+      $servername = "172.31.10.114";
       $username = "admin";
       $password = "password";
       $dbname = "mysql";
