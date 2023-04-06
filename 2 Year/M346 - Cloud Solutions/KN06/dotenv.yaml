@@ -1,0 +1,60 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuoITsAlCT/oHIDN/Pv+dCGhPY+6Tz4WjAXGR5aghr2emplfHdr/U6/zltUeIcDldLHspiF8iw9feEDn/xdLAh/c6/XQj5leDRBqYXwDrApCmrE2F1Nxj2mnrkb4XkZgQBzqYshs8ywBO0QpwhdsI9+dWc5TmxI4G8k9sEcePe4W12bFGscoeJRB9Shx9s5srXwqGaV71cxXBjk/4lBcWqos98y3ugIMiYSWlW3ScznmcKtEeh83lMDR5NoOpL9Jfp2XLHn9fhiU25He2buZdBpeZITdBnVm4IL2AOhpRcXcPnuxQtnU5ZCSqByQlVsLRD0KkF5THF/9bxn/sXZPMb aws-key
+ssh_pwauth: true
+disable_root: false
+packages:
+  - curl
+  - wget
+  - nginx
+  - aspnetcore-runtime-6.0
+write_files:
+  - content: |
+      [Unit]
+      Description=Demo Shop
+      [Service]
+      WorkingDirectory=/var/www/app
+      ExecStart=/usr/bin/dotnet /var/www/app/ShopDemo.dll
+      Restart=always
+      RestartSec=10
+      KillSignal=SIGINT
+      SyslogIdentifier=dotnet-example
+      User=www-data
+      Environment=ASPNETCORE_ENVIRONMENT=Production
+      Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+      [Install]
+      WantedBy=multi-user.target
+    path: /etc/systemd/system/shop-app.service
+  - content: |
+      server {
+        listen        80;
+        server_name   <Public-IP-Web!>;
+        location / {
+          proxy_pass         http://127.0.0.1:5000;
+          proxy_http_version 1.1;
+          proxy_set_header   Upgrade $http_upgrade;
+          proxy_set_header   Connection keep-alive;
+          proxy_set_header   Host $host;
+          proxy_cache_bypass $http_upgrade;
+          proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header   X-Forwarded-Proto $scheme;
+        }
+      }
+    path: /home/ubuntu/nginx
+runcmd:
+  - sudo mkdir /var/www
+  - sudo mkdir /var/www/app
+  - sudo git clone https://gitlab.com/ch-tbz-it/Stud/m346/m346scripts.git
+  - sudo sed -i 's/<your-connection-string>/server=<Private-IP-DB!>;user id=admin;password=password;database=shop/g' ./m346scripts/KN06/dotnet/appsettings.json
+  - sudo cp -r ./m346scripts/KN06/dotnet/* /var/www/app/
+  - sudo systemctl enable shop-app.service
+  - sudo systemctl start shop-app.service
+  - sudo service nginx start
+  - sudo cp /home/ubuntu/nginx /etc/nginx/sites-available/default
+  - sudo nginx -s reload
