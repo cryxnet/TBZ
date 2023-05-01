@@ -7,36 +7,35 @@ users:
     shell: /bin/bash
     ssh_authorized_keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuoITsAlCT/oHIDN/Pv+dCGhPY+6Tz4WjAXGR5aghr2emplfHdr/U6/zltUeIcDldLHspiF8iw9feEDn/xdLAh/c6/XQj5leDRBqYXwDrApCmrE2F1Nxj2mnrkb4XkZgQBzqYshs8ywBO0QpwhdsI9+dWc5TmxI4G8k9sEcePe4W12bFGscoeJRB9Shx9s5srXwqGaV71cxXBjk/4lBcWqos98y3ugIMiYSWlW3ScznmcKtEeh83lMDR5NoOpL9Jfp2XLHn9fhiU25He2buZdBpeZITdBnVm4IL2AOhpRcXcPnuxQtnU5ZCSqByQlVsLRD0KkF5THF/9bxn/sXZPMb aws-key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key
 ssh_pwauth: true
 disable_root: false
+package_update: true
 packages:
   - curl
   - wget
   - nginx
-  - aspnetcore-runtime-6.0
+  - openjdk-18-jre
 write_files:
   - content: |
       [Unit]
       Description=Demo Shop
+      After=syslog.target
       [Service]
       WorkingDirectory=/var/www/app
-      ExecStart=/usr/bin/dotnet /var/www/app/ShopDemo.dll
+      User=www-data
+      ExecStart=java -jar /var/www/app/shopdemo-1.0.0.jar --spring.config.additional-location=production.properties SuccessExitStatus=143 
       Restart=always
       RestartSec=10
-      KillSignal=SIGINT
-      SyslogIdentifier=dotnet-example
-      User=www-data
-      Environment=ASPNETCORE_ENVIRONMENT=Production
-      Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
-      [Install]
+      [Install] 
       WantedBy=multi-user.target
     path: /etc/systemd/system/shop-app.service
   - content: |
       server {
         listen        80;
-        server_name   <Public-IP-Web!>;
+        server_name   3.215.205.200;
         location / {
-          proxy_pass         http://127.0.0.1:5000;
+          proxy_pass         http://127.0.0.1:5001;
           proxy_http_version 1.1;
           proxy_set_header   Upgrade $http_upgrade;
           proxy_set_header   Connection keep-alive;
@@ -51,8 +50,8 @@ runcmd:
   - sudo mkdir /var/www
   - sudo mkdir /var/www/app
   - sudo git clone https://gitlab.com/ch-tbz-it/Stud/m346/m346scripts.git
-  - sudo sed -i 's/<your-connection-string>/server=<Private-IP-DB!>;user id=admin;password=password;database=shop/g' ./m346scripts/KN06/dotnet/appsettings.json
-  - sudo cp -r ./m346scripts/KN06/dotnet/* /var/www/app/
+  - sudo sed -i 's/<your-connection-string>/jdbc:mysql:\/\/172.31.10.114:3306\/shop/g' ./m346scripts/KN06/java/production.properties
+  - sudo cp -r ./m346scripts/KN06/java/* /var/www/app/
   - sudo systemctl enable shop-app.service
   - sudo systemctl start shop-app.service
   - sudo service nginx start
