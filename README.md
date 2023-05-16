@@ -7,5 +7,5 @@ This repository serves as my personal collection of exercises, assignments, note
 ## Features
 
 - All notes and documents are written in Markdown using Obsidian.
-- Theres a pipeline that automatically converts all the obsidian notes into a github page to you can access them directly by browser.
+- [Theres a pipeline that automatically converts all the obsidian notes into a github page to you can access them directly by browser.](https://github.com/jobindjohn/obsidian-publish-mkdocs)
 - All notes are under the `docs/` folder.
