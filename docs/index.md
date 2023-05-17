@@ -1,4 +1,4 @@
-## Welcome my notes for TBZ
+## Welcome my collection of notes for TBZ
 ---
 
 ## 1 Year
