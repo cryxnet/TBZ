@@ -1,6 +1,6 @@
 
 ## 🚩 |  Course Syllabus
-- https://gitlab.com/ch-tbz-it/Stud/M426
+- [M426 | TBZ | GITLAB](https://gitlab.com/ch-tbz-it/Stud/M426)
 
 ## 💡 |  Learning Objectives
 - Being able to distinguish and list process models

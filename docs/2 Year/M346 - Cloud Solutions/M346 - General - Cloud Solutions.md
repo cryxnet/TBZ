@@ -1,6 +1,6 @@
 
 ## 🚩 |  Course Syllabus
-- https://gitlab.com/ch-tbz-it/Stud/m346/m346
+- [M346 | TBZ | GITLAB](https://gitlab.com/ch-tbz-it/Stud/m346/m346)
 
 ## 💡 |  Learning Objectives
 - Virtualization

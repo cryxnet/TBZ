@@ -1,6 +1,6 @@
 
 ## 🚩 |  Course Syllabus
-- https://gitlab.com/ch-tbz-it/Stud/m320
+ - [M320 | TBZ | Gitlab](https://gitlab.com/ch-tbz-it/Stud/m320)
 
 ## 💡 |  Learning Objectives
 1. Analyzes application problems to create object-oriented programs.

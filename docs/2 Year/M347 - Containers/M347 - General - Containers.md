@@ -1,6 +1,6 @@
 
 ## 🚩 |  Course Syllabus
-- https://gitlab.com/ch-tbz-it/Stud/m347
+- [M347 | TBZ | GITLAB](https://gitlab.com/ch-tbz-it/Stud/m347)
 
 ## 💡 |  Learning Objectives
 - Basiswissen/Fachbegriffe

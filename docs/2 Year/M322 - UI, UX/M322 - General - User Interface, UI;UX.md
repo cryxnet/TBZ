@@ -1,6 +1,6 @@
 
 ## 🚩 |  Course Syllabus
-- https://gitlab.com/ch-tbz-it/Stud/m322
+- [M322 | TBZ | GITLAB](https://gitlab.com/ch-tbz-it/Stud/m322)
 
 ## 💡 |  Learning Objectives
 - What is UX and UI?
