@@ -22,4 +22,7 @@ Nothing documented here
 
 ## Cheatsheets
 - [Docker - Cheatsheet](2%20Year/M347%20-%20Containers/Docker%20-%20Cheatsheet.md)
+- [OOP - Cheatsheet](2%20Year/M320%20-%20OOP/OOP%20-%20Cheatsheet.md)
+- [Scrum - Cheatsheet](2%20Year/M426%20-%20SCRUM/Scrum%20-%20Cheatsheet.md)
+- [NoSQL - Cheatsheet](2%20Year/M165%20-%20NoSQL/NoSQL%20-%20Cheatsheet.md)
 - [Cloud Solution - Cheatsheet](2%20Year/M346%20-%20Cloud%20Solutions/Cloud%20Solution%20-%20Cheatsheet.md)
