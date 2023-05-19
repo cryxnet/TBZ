@@ -21,6 +21,7 @@ VMs are created by software called a hypervisor or virtual machine monitor (VMM)
 
 **The difference**
 ![](../../_assets/grafik-removebg-preview(1).png)
+_Image from section.io_
 
 ## Docker CLI
 
@@ -95,7 +96,7 @@ docker run -p 3000:3000 mynodeapp
 - **-p** open ports (container:host)
  
 ![](../../_assets/image-43-84783477.png)
-(Image from Internet)
+_https://www.docker.com/blog/containerized-python-development-part-1/_
 
 ## Docker Compose
 
@@ -169,6 +170,7 @@ docker run -v /container/directory --mount type=tmpfs my-image
 
 - A container registry is like github, where you store code and other stuff. In container registries you store container images. You can easily manage, upload, download, update your container images. 
 ![](../../_assets/containerRegistry.png)
+*https://blogs.sap.com/2022/11/01/use-private-registry-for-containerize-a-cap-application-part-1/*
 
 ### Public Registry
 > A **public registry** is a Docker registry that is publicly accessible and allows anyone to push and pull Docker images from it.
