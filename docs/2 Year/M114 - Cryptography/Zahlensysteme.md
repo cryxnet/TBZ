@@ -48,3 +48,7 @@ Um eine Dualzahl mit Komma in eine Dezimalzahl umzuwandeln, multipliziere jede Z
 #### Beispiel:
 Dualzahl: 101.11
 Dezimalzahl: (1 * 2^2) + (0 * 2^1) + (1 * 2^0) + (1 * 2^-1) + (1 * 2^-2) = 4 + 0 + 1 + 0.5 + 0.25 = 23
+
+
+> ![](../../_assets/Pasted%20image%2020230529160322.png)
+> https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.allgemeinbildung.ch%2Farb%2Farb%3Dmat%2Fw_LernPlakate_MAT_Zahlensysteme-Vergleich.jpg&f=1&nofb=1&ipt=33e0e701124acfbe3b680d88f1fce43834823b28bad9e0d57f03bc3c65b90bbb&ipo=images
