@@ -13,6 +13,7 @@ Nothing documented here
 - [M346 - General - Cloud Solutions](2%20Year/M346%20-%20Cloud%20Solutions/M346%20-%20General%20-%20Cloud%20Solutions.md)
 - [M426 - General -  Agile Software Development](2%20Year/M426%20-%20SCRUM/M426%20-%20General%20-%20%20Agile%20Software%20Development.md)
 - [M254 - General - Business Process](2%20Year/M254%20-%20Business%20Process/M254%20-%20General%20-%20Business%20Process.md)
+- [M114 - General - Cryptography](2%20Year/M114%20-%20Cryptography/M114%20-%20General%20-%20Cryptography.md)
 
 ## 3 Year
 Nothing documented here
