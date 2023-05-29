@@ -7,9 +7,3 @@
 2. Models and documents object-oriented programs.
 3. Implements object-oriented design.
 4. Verifies implementation for correctness and quality.
-
-## 📓 | Notes
-
-
-## 📍| Project
-

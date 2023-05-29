@@ -10,8 +10,14 @@
 - Scaling in AWS
 - Storage Models
 
-## 📓 | Notes
+## 📓 | Notes & Exercises
+- [KN02](KN02/KN02.md)
+- [KN03](KN03/KN03.md)
+- [KN04](KN04/KN04.md)
+- [KN05](KN05/KN05.md)
+- [KN06](KN06/KN06.md)
+- [KN07](KN07/KN07.md)
+- [KN08](KN08/KN08.md)
+- [Cloud Solution - Cheatsheet](Cloud%20Solution%20-%20Cheatsheet.md)
 
-
-## 📍| Project
 

@@ -9,8 +9,9 @@
 - Kubernetes
 - Create and deploy a fullstack app in Kubernetes
 
-## 📓 | Notes
-
+## 📓 | Notes & Exercises
+- [Docker Registry and Publish](Docker%20Registry%20and%20Publish.md)
+- [Docker - Cheatsheet](Docker%20-%20Cheatsheet.md)
 
 ## 📍| Project
 

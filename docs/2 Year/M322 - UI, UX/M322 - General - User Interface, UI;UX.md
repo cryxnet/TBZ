@@ -6,9 +6,3 @@
 - What is UX and UI?
 - Workflow, Smart Design
 - Creating a UI/UX Design
-
-## 📓 | Notes
-
-
-## 📍| Project
-
