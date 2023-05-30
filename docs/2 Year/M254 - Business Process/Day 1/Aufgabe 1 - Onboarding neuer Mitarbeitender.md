@@ -41,4 +41,4 @@
 
 ## Flowdiagramm
 
-![](../../../_assets/flowchart_onboarding_Process.drawio.png)
+![](../../../_assets/aufgabe_1_flowchart_onboarding_prozess.png)
