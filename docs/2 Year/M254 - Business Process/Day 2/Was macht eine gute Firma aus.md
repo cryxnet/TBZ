@@ -1,0 +1,20 @@
+- Klare Vision und Mission
+- Hohe Produkt- oder Dienstleistungsqualität
+- Starke Kundenorientierung
+- Effektive Kommunikation
+- Transparente und verantwortungsbewusste Führung
+- Engagierte und motivierte Mitarbeiter
+- Innovationsfähigkeit
+- Effiziente Prozesse und Ressourcennutzung
+- Nachhaltiges Wirtschaften
+- Starke Marktposition und Wettbewerbsfähigkeit
+
+- Gemeinsame Sprache und "Landkarte"
+- Wissen was passiert (wer macht, was, wann, ... ?)
+- Zusammenhänge / Abhängigkeiten verstehen
+- Ausrichtung der IT an das Business (Alignment)
+- Know-How Transfer (Verlust von Wissen vermeiden)
+- Regeln und Weisungen abbilden und durchsetzten
+- Schulung und Einführung von Mitarbeitern
+- Übertragbarkeit, Business Process Outsourcing
+- Weitere: Best Practices, Personalbedarf, Schnittstellen, Zertifikate

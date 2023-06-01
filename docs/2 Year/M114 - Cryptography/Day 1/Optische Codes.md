@@ -10,7 +10,7 @@ Ein Barcode ist eine maschinenlesbare Darstellung von Informationen in Form von 
 ### Funktionsweise
 - https://www.youtube.com/watch?v=GOYRT3-0IJI
 
-> ![](../../_assets/Bestandteile_GTIN-13-1461258871.jpg)
+> ![](../../../_assets/Bestandteile_GTIN-13-1461258871.jpg)
 *https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.labelfox.com%2Fwp-content%2Fuploads%2F2014%2F02%2FBestandteile_GTIN-13.jpg&f=1&nofb=1&ipt=62faa8de1d9a504a5916d55aec8b88a0a47e537385ab56bc9677cd0daee531ab&ipo=images*
 
 ## QR

@@ -4,5 +4,7 @@
 ## 💡 |  Learning Objectives
 
 ## 📓 | Notes & Exercises
-- [[Zahlensysteme]]
-- [Optische Codes](Optische%20Codes.md)
+- [[Day 1/Zahlensysteme]]
+- [Optische Codes](Day%201/Optische%20Codes.md)
+- [Huffman-Codierung](Day%202/Huffman-Codierung.md)
+- [Lernstandsanalyse Zahlensysteme](Day%202/Lernstandsanalyse%20Zahlensysteme.md)
