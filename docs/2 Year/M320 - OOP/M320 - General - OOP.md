@@ -1,4 +1,3 @@
-
 ## 🚩 |  Course Syllabus
  - [M320 | TBZ | Gitlab](https://gitlab.com/ch-tbz-it/Stud/m320)
 

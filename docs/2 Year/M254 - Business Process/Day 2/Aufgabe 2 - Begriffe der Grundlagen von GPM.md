@@ -1,25 +1,43 @@
 
 ## Nutzung von GPM
-GPM bezieht sich auf die Verwaltung, Optimierung und Überwachung der verschiedenen Prozesse in einem Unternehmen, um die Effizienz, Produktivität und Kundenzufriedenheit zu verbessern.
+- GPM, Geschäftsprozessmanagement, bezieht sich auf die Verwaltung, Optimierung und Überwachung verschiedenen Prozesse in einem Unternehmen.
+- Das Ziel ist die Produktivität, Effizienz und Kundenzufriedenheit zu verbessern.
 
 ## Prozesslandkarte und Prozess-Kategorien
-Eine Prozesslandkarte ist eine visuelle Darstellung der Geschäftsprozesse einer Organisation. Sie zeigt die verschiedenen Prozesse, die in einem Unternehmen existieren, sowie deren Beziehungen und Abhängigkeiten. Die Prozesslandkarte hilft dabei, einen Überblick über die gesamten Abläufe eines Unternehmens zu gewinnen.
+- Eine Prozesslandkarte ist eine visuelle Darstellung der Geschäftsprozesse. 
+- Sie zeigt die verschiedenen Prozesse, deren Beziehungen und Abhängigkeiten. 
+- Die Prozesslandkarte hilft dabei, einen Überblick über die gesamten Abläufe eines Unternehmens zu gewinnen.
 
-Prozess-Kategorien sind Gruppierungen von ähnlichen oder verwandten Prozessen. Sie dienen dazu, die Prozesse in der Prozesslandkarte zu strukturieren und zu organisieren. Durch die Zuordnung von Prozessen zu Kategorien können Zusammenhänge und Beziehungen zwischen den verschiedenen Abläufen eines Unternehmens deutlicher werden.
+- Prozess-Kategorien sind Gruppierungen von ähnlichen oder verwandten Prozessen. 
+- Sie dienen dazu, die Prozesse in der Prozesslandkarte zu strukturieren und zu organisieren. 
+- Durch die Zuordnung von Prozessen zu Kategorien können Zusammenhänge und Beziehungen zwischen den verschiedenen Abläufen eines Unternehmens deutlicher werden.
 
-z.B. Prozess-Kategorien:
+### Prozess-Kategorien:
 
-- Beschaffung und Einkauf
-- Produktion und Fertigung
-- Vertrieb und Marketing
-- Personalmanagement
-- Qualitätsmanagement
-- Finanz- und Rechnungswesen
-- Kundenservice
+**Management Processes:**
+- Verantwortlich für die strategische Planung, Ausrichtung und Führung des Projekts
+- Umfasst Entscheidungsfindung, Zielsetzung, Überwachung und Kontrolle des Projekts
+- Fokussiert auf die Gesamtführung und das Management der Projektressourcen
+
+**Core Processes:**
+
+- Kernprozesse, die direkt zur Erreichung der Projektziele beitragen
+- Enthält die Hauptaktivitäten, die zur Durchführung des Projekts erforderlich sind
+- Beispiele umfassen Planung, Ausführung, Überwachung und Abschluss des Projekts
+
+**Support Processes:**
+
+- Unterstützende Prozesse, die den Kernprozessen dienen
+- Bietet zusätzliche Unterstützung und Ressourcen für den reibungslosen Ablauf des Projekts
+- Beispiele umfassen Risikomanagement, Qualitätsmanagement, Kommunikationsmanagement und Beschaffungsmanagement
+
+![](../../../_assets/Pasted%20image%2020230605085643.png)
+> Adonis
+
 
 Die Prozesslandkarte und die Prozess-Kategorien helfen dabei, die Geschäftsprozesse einer Organisation besser zu verstehen, Engpässe zu identifizieren, Verbesserungspotenziale aufzudecken und die Effizienz sowie die Qualität der Abläufe zu steigern.
 
-> Man weiss was man tun muss und was getan wurde
+> "Man weiss was man tun muss und was getan wurde"
 
 ## Aufbau- und Ablauforganisation
 
@@ -47,17 +65,13 @@ Die Prozesslandkarte und die Prozess-Kategorien helfen dabei, die Geschäftsproz
 
 ## Prozessanalyse und Optimierung
 
-
 ### Prozessanalyse: Untersuchung von Abläufen
-Prozessanalyse befasst sich mit der Untersuchung und dem Verständnis von Abläufen innerhalb eines Unternehmens oder einer Organisation. Durch eine detaillierte Schritt-für-Schritt-Analyse können Engpässe, Schwachstellen und ineffiziente Bereiche identifiziert werden. Das Ziel besteht darin, den Prozess in seiner Gesamtheit zu erfassen und zu verstehen.
-
+- Prozessanalyse befasst sich mit der Untersuchung und dem Verständnis von Abläufen innerhalb eines Unternehmens oder einer Organisation. 
+- Engpässe, Schwachstellen und ineffiziente Bereiche identifizieren. 
 - Ziel: Verstehen, wie ein Prozess abläuft
-- Schritt-für-Schritt-Analyse von Aufgaben und Aktivitäten
-- Identifizierung von Engpässen, Problembereichen und Ineffizienzen
 
 ### Prozessoptimierung: Verbesserung der Abläufe
-Prozessoptimierung zielt darauf ab, die identifizierten Problembereiche zu verbessern und die Abläufe effizienter zu gestalten. Dabei werden Verschwendungen, unnötige Schritte oder Zeitverluste eliminiert. Best Practices und moderne Tools können eingesetzt werden, um die Prozesse zu optimieren und die Durchlaufzeiten sowie Kosten zu reduzieren.
-
+- Prozessoptimierung zielt darauf ab, die identifizierten Problembereiche zu verbessern und die Abläufe effizienter zu gestalten. 
 - Ziel: Effizientere und reibungslosere Prozesse
 - Eliminierung von Verschwendung und unnötigen Schritten
 - Nutzung von Best Practices und modernen Tools

@@ -1,7 +1,6 @@
-
 ## Unternehmen auswählen
 
-Als Unternehmen für die Identifikation von Geschäftsprozessen habe ich Apple ausgewählt. 
+Als Unternehmen für die Identifikation von Geschäftsprozessen habe ich [Apple](https://apple.com) ausgewählt. 
 
 ## Mindestens 4 Geschäftsprozesse identifizieren und kategorisieren
 
@@ -25,4 +24,4 @@ Als Unternehmen für die Identifikation von Geschäftsprozessen habe ich Apple a
 	- Lieferantenmanagement, Bestellabwicklung, Qualitätskontrolle, Lagerhaltung, Versand und Logistik, Nachverfolgung der Lieferungen.
 
 4. Kundensupportprozess - Technischer Support und Kundendienst:
-	- Kundenkommunikation (telefonisch, per E-Mail oder Online-Chat), Fehlerdiagnose und -behebung, Reparatur- und Austauschservices, Rückgabeverwaltung, Kundenfeedback und -bewertungen.
+	- Kundenkommunikation, Fehlerdiagnose und -behebung, Reparatur- und Austauschservices, Rückgabeverwaltung, Kundenfeedback und -bewertungen.

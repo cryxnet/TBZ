@@ -5,6 +5,12 @@ This repository serves as my personal collection of exercises, assignments, note
 
 ## 1 Year
 Nothing documented here
+[M117 - General - IT-Networkstructure](1%20Year/M117%20-%20IT-Networkstructure/M117%20-%20General%20-%20IT-Networkstructure.md)
+[M122 - General - Scripting w Bash](1%20Year/M122%20-%20Scripting%20w%20Bash/M122%20-%20General%20-%20Scripting%20w%20Bash.md)
+[M162 - General - Data analysis and modelling](1%20Year/M162%20-%20Data%20analysis%20and%20modelling/M162%20-%20General%20-%20Data%20analysis%20and%20modelling.md)
+[M164 - General - Database](1%20Year/M164%20-%20Database/M164%20-%20General%20-%20Database.md)
+[M231 - General - Data protection and security](1%20Year/M231%20-%20Data%20protection%20and%20security/M231%20-%20General%20-%20Data%20protection%20and%20security.md)
+[M293 - General - Web Dev](1%20Year/M293%20-%20Web%20Dev/M293%20-%20General%20-%20Web%20Dev.md)
 
 ## 2 Year
 - [M165- General - NoSQL](2%20Year/M165%20-%20NoSQL/M165-%20General%20-%20NoSQL.md)
