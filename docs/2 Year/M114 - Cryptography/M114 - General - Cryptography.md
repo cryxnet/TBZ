@@ -9,3 +9,4 @@
 - [Huffman-Codierung](Day%202/Huffman-Codierung.md)
 - [Lernstandsanalyse Zahlensysteme](Day%202/Lernstandsanalyse%20Zahlensysteme.md)
 - [Komprimierung](Day%202/Komprimierung.md)
+- [JPEG-Bildkomprimierung](Day%203/JPEG-Bildkomprimierung.md)
