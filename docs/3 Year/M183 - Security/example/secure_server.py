@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 app = Flask(__name__)
 
 # Erlaubte Hosts definieren
-ALLOWED_HOSTS = ['10.62.104.244']
+ALLOWED_HOSTS = ['10.62.104.222:8881']
 
 def is_valid_url(url):
     """Überprüfen, ob die URL gültig und zu einem erlaubten Host gehört."""
@@ -41,3 +41,6 @@ def follow_url():
 @app.route('/login')
 def login_page():
     return "Login Page"
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8881)

@@ -20,7 +20,7 @@ def login():
     </head>
     <body>
         <h1>Login Page</h1>
-        <form action="/follow" method="get">
+        <form action="/follow?url=http://" method="get">
             <input type="hidden" name="url" value="/">
             <button type="submit">Go to Home Page</button>
         </form>
