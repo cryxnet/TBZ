@@ -1,0 +1,55 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuoITsAlCT/oHIDN/Pv+dCGhPY+6Tz4WjAXGR5aghr2emplfHdr/U6/zltUeIcDldLHspiF8iw9feEDn/xdLAh/c6/XQj5leDRBqYXwDrApCmrE2F1Nxj2mnrkb4XkZgQBzqYshs8ywBO0QpwhdsI9+dWc5TmxI4G8k9sEcePe4W12bFGscoeJRB9Shx9s5srXwqGaV71cxXBjk/4lBcWqos98y3ugIMiYSWlW3ScznmcKtEeh83lMDR5NoOpL9Jfp2XLHn9fhiU25He2buZdBpeZITdBnVm4IL2AOhpRcXcPnuxQtnU5ZCSqByQlVsLRD0KkF5THF/9bxn/sXZPMb aws-key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key
+ssh_pwauth: true
+disable_root: false
+packages:
+  - apache2
+  - curl
+  - wget
+  - php
+  - libapache2-mod-php
+  - php-mysqli
+  - adminer
+runcmd:
+  - sudo a2enconf adminer
+  - sudo systemctl restart apache2
+write_files:
+  - path: /var/www/html/info.php
+    content: |
+      <?php
+      // Show all information, defaults to INFO_ALL
+      phpinfo();
+      ?>
+    permissions: "0644"
+  - path: /var/www/html/db.php
+    content: |
+      <?php
+      //database
+      $servername = "172.31.10.114";
+      $username = "admin";
+      $password = "password";
+      $dbname = "mysql";
+
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+      }
+
+      $sql = "select Host, User from mysql.user;";
+      $result = $conn->query($sql);
+      while($row = $result->fetch_assoc()){
+              echo($row["Host"] . " / " . $row["User"] . "<br />");
+      }
+      //var_dump($result);
+      ?>
+    permissions: "0644"

@@ -1,0 +1,3304 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../M322%20-%20UI%2C%20UX/M322%20-%20General%20-%20User%20Interface%2C%20UI%3BUX/">
+      
+      
+        <link rel="next" href="../M346%20-%20General%20-%20Cloud%20Solutions/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>Cloud Solution Cheatsheet - CRYXNET | TBZ</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cloud-init" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="CRYXNET | TBZ" class="md-header__button md-logo" aria-label="CRYXNET | TBZ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CRYXNET | TBZ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cloud Solution   Cheatsheet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="CRYXNET | TBZ" class="md-nav__button md-logo" aria-label="CRYXNET | TBZ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CRYXNET | TBZ
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    1 Year
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1 Year
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M117   IT Networkstructure
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            M117   IT Networkstructure
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1%20Year/M117%20-%20IT-Networkstructure/M117%20-%20General%20-%20IT-Networkstructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M117   General   IT Networkstructure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M122   Scripting w Bash
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            M122   Scripting w Bash
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1%20Year/M122%20-%20Scripting%20w%20Bash/M122%20-%20General%20-%20Scripting%20w%20Bash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M122   General   Scripting w Bash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M162   Data analysis and modelling
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            M162   Data analysis and modelling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1%20Year/M162%20-%20Data%20analysis%20and%20modelling/M162%20-%20General%20-%20Data%20analysis%20and%20modelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M162   General   Data analysis and modelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M164   Database
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            M164   Database
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1%20Year/M164%20-%20Database/M164%20-%20General%20-%20Database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M164   General   Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M231   Data protection and security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            M231   Data protection and security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1%20Year/M231%20-%20Data%20protection%20and%20security/M231%20-%20General%20-%20Data%20protection%20and%20security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M231   General   Data protection and security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M293   Web Dev
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            M293   Web Dev
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1%20Year/M293%20-%20Web%20Dev/M293%20-%20General%20-%20Web%20Dev/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M293   General   Web Dev
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2 Year
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2 Year
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M114   Cryptography
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            M114   Cryptography
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M114%20-%20Cryptography/M114%20-%20General%20-%20Cryptography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M114   General   Cryptography
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Day 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Day 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M114%20-%20Cryptography/Day%201/Optische%20Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optische Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M114%20-%20Cryptography/Day%201/Zahlensysteme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zahlensysteme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_3" id="__nav_3_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Day 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Day 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M114%20-%20Cryptography/Day%202/Huffman-Codierung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Huffman Codierung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M114%20-%20Cryptography/Day%202/Komprimierung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Komprimierung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M114%20-%20Cryptography/Day%202/Lernstandsanalyse%20Zahlensysteme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lernstandsanalyse Zahlensysteme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_4" id="__nav_3_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Day 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Day 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M114%20-%20Cryptography/Day%203/JPEG-Bildkomprimierung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JPEG Bildkomprimierung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M165   NoSQL
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            M165   NoSQL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M165%20-%20NoSQL/M165-%20General%20-%20NoSQL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M165  General   NoSQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M165%20-%20NoSQL/NoSQL%20-%20Cheatsheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NoSQL   Cheatsheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M254   Business Process
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            M254   Business Process
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M254%20-%20Business%20Process/M254%20-%20General%20-%20Business%20Process/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M254   General   Business Process
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Day 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Day 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M254%20-%20Business%20Process/Day%201/Aufgabe%201%20-%20Onboarding%20neuer%20Mitarbeitender/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aufgabe 1   Onboarding neuer Mitarbeitender
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M254%20-%20Business%20Process/Day%201/Aufgabe%202%20-%20Begriffe%20des%20Gesch%C3%A4ftsprozessmanagements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aufgabe 2   Begriffe des Geschäftsprozessmanagements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Day 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Day 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M254%20-%20Business%20Process/Day%202/Aufgabe%202%20-%20Begriffe%20der%20Grundlagen%20von%20GPM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aufgabe 2   Begriffe der Grundlagen von GPM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M254%20-%20Business%20Process/Day%202/Aufgabe%203%20-%20Identifikation%20von%20Gesch%C3%A4ftsprozessen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aufgabe 3   Identifikation von Geschäftsprozessen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M254%20-%20Business%20Process/Day%202/Was%20macht%20eine%20gute%20Firma%20aus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Was macht eine gute Firma aus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M320   OOP
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            M320   OOP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M320%20-%20OOP/M320%20-%20General%20-%20OOP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M320   General   OOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M320%20-%20OOP/OOP%20-%20Cheatsheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOP   Cheatsheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M322   UI, UX
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            M322   UI, UX
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M322%20-%20UI%2C%20UX/M322%20-%20General%20-%20User%20Interface%2C%20UI%3BUX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M322   General   User Interface, UI;UX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M346   Cloud Solutions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            M346   Cloud Solutions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cloud Solution   Cheatsheet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Solution   Cheatsheet
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-init" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud-init
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infrastructure-as-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrastructure as Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtualization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hypervisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypervisor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hypervisor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperscalers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperscalers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#public-vs-privat-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public vs. Privat Cloud
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Service models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-system-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud-System Layers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-migrations-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Cloud-) Migrations models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistent-and-volatile-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistent and volatile storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../M346%20-%20General%20-%20Cloud%20Solutions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M346   General   Cloud Solutions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_3" id="__nav_3_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    KN01
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            KN01
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KN01/KN01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KN01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_4" id="__nav_3_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    KN02
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            KN02
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KN02/KN02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KN02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_5" id="__nav_3_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    KN03
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            KN03
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KN03/KN03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KN03
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_6" id="__nav_3_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    KN04
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            KN04
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KN04/KN04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KN04
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_7" id="__nav_3_6_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    KN05
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            KN05
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KN05/KN05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KN05
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_8" id="__nav_3_6_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    KN06
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_8">
+            <span class="md-nav__icon md-icon"></span>
+            KN06
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KN06/KN06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KN06
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_9" id="__nav_3_6_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    KN07
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_9">
+            <span class="md-nav__icon md-icon"></span>
+            KN07
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KN07/KN07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KN07
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_10" id="__nav_3_6_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    KN08
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_10">
+            <span class="md-nav__icon md-icon"></span>
+            KN08
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KN08/KN08/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KN08
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M347   Containers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            M347   Containers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M347%20-%20Containers/Docker%20-%20Cheatsheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker - Cheatsheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M347%20-%20Containers/Docker%20Registry%20and%20Publish/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker Registry and Publish
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M347%20-%20Containers/M347%20-%20General%20-%20Containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M347   General   Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M426   SCRUM
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            M426   SCRUM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M426%20-%20SCRUM/M426%20-%20General%20-%20%20Agile%20Software%20Development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M426   General    Agile Software Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M426%20-%20SCRUM/Scrum%20-%20Cheatsheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scrum   Cheatsheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3 Year
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3 Year
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    450   Testing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            450   Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3%20Year/450%20-%20Testing/Java%20Testing%20with%20JUnit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Java Testing with JUnit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3%20Year/450%20-%20Testing/M450%20-%20General%20-%20Testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M450   General   Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3%20Year/450%20-%20Testing/Testing%20Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    M183   Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            M183   Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3%20Year/M183%20-%20Security/M183%20-%20General%20-%20Security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    M183   General   Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    4 Year
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4 Year
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4%20Year/Nothing%20Here/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nothing Here
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+     assets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+             assets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../_assets/Untitled/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Untitled
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-init" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud-init
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infrastructure-as-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrastructure as Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtualization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hypervisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypervisor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hypervisor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperscalers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperscalers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#public-vs-privat-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public vs. Privat Cloud
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Service models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-system-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud-System Layers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-migrations-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Cloud-) Migrations models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistent-and-volatile-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistent and volatile storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Cloud Solution   Cheatsheet</h1>
+
+<blockquote>
+<p>Lernziele: https://gitlab.com/ch-tbz-it/Stud/m346/m346/-/blob/main/KN00/KN00.md</p>
+</blockquote>
+<h2 id="cloud-init">Cloud-init<a class="headerlink" href="#cloud-init" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Cloud-init is open-source software used to automate the configuration and initialization of virtual machines in cloud computing environments. It allows administrators to define user data instructions that automate tasks such as software installation, network configuration, and user account setup.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">#cloud-config</span>
+<span class="c1"># Sets the hostname of the virtual machine to &quot;my-vm&quot;.</span>
+<span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-vm</span>
+<span class="c1"># Sets the fully qualified domain name (FQDN) of the virtual machine to &quot;my-vm.example.com&quot;.</span>
+<span class="nt">fqdn</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-vm.example.com</span>
+<span class="c1"># Adds a new user named &quot;ubuntu&quot;, adds dand authorizes SSH access with an SSH public key.</span>
+<span class="nt">users</span><span class="p">:</span>
+<span class="err"> </span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu</span><span class="w"> </span><span class="c1"># name</span>
+<span class="err">   </span><span class="w"> </span><span class="nt">sudo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALL=(ALL) NOPASSWD:ALL</span><span class="w"> </span><span class="c1"># give all sudo and no pwd req</span>
+<span class="err">   </span><span class="w"> </span><span class="nt">groups</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">users, admin</span><span class="w"> </span><span class="c1"># adds to grouü</span>
+<span class="err">   </span><span class="w"> </span><span class="nt">home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/home/ubuntu</span><span class="w"> </span><span class="c1"># allocate home dir</span>
+<span class="err">   </span><span class="w"> </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/bin/bash</span><span class="w"> </span><span class="c1"># allocates the shell</span>
+<span class="err">   </span><span class="w"> </span><span class="nt">ssh_authorized_keys</span><span class="p">:</span>
+<span class="err">     </span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh-rsa keykeykey aws-key</span>
+<span class="nt">ssh_pwauth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span><span class="c1"># enable pw auth</span>
+<span class="nt">disable_root</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"> </span><span class="c1"># disables root</span>
+<span class="c1"># Installs the Nginx web server and Git version control system.</span>
+<span class="nt">packages</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git</span>
+<span class="c1"># Creates an Nginx configuration file for the virtual host &quot;my-vm.example.com&quot;.</span>
+<span class="nt">write_files</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">      </span><span class="no">server {</span>
+<span class="w">          </span><span class="no">listen 80;</span>
+<span class="w">          </span><span class="no">server_name my-vm.example.com;</span>
+
+<span class="w">          </span><span class="no">location / {</span>
+<span class="w">              </span><span class="no">root /var/www/my-app;</span>
+<span class="w">              </span><span class="no">index index.html;</span>
+<span class="w">          </span><span class="no">}</span>
+<span class="w">      </span><span class="no">}</span>
+<span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/nginx/sites-available/my-vm.conf</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">root:root</span>
+<span class="w">    </span><span class="nt">permissions</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;0644&#39;</span>
+<span class="c1"># Creates a simple HTML file for the virtual host &quot;my-vm.example.com&quot;.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">      </span><span class="no">&lt;!DOCTYPE html&gt;</span>
+<span class="w">      </span><span class="no">&lt;html&gt;</span>
+<span class="w">      </span><span class="no">&lt;body&gt;</span>
+<span class="w">      </span><span class="no">&lt;h1&gt;Welcome to my app!&lt;/h1&gt;</span>
+<span class="w">      </span><span class="no">&lt;/body&gt;</span>
+<span class="w">      </span><span class="no">&lt;/html&gt;</span>
+<span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/www/my-app/index.html</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">www-data:www-data</span>
+<span class="w">    </span><span class="nt">permissions</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;0644&#39;</span>
+<span class="c1"># Restarts the Nginx web server to apply the new configuration, clones a Git repository, and sets the correct permissions for the web server directory.</span>
+<span class="nt">runcmd</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">systemctl restart nginx</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git clone https://github.com/my-user/my-app.git /var/www/my-app</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">chown -R www-data:www-data /var/www/my-app</span>
+</code></pre></div>
+<p><strong>Pro Arguments:</strong>
+1.  <strong>Automation:</strong> Cloud-init enables automated provisioning and configuration of virtual machines, reducing the need for manual setup and configuration. This improves efficiency and reduces the risk of errors and inconsistencies.
+2.  <strong>Flexibility:</strong> Cloud-init can be used with a variety of cloud providers, operating systems, and virtual machine images. This provides organizations with the flexibility to use their preferred cloud provider and customize their virtual machine images to meet their specific requirements.
+3.  <strong>Security:</strong> Cloud-init supports several security features, such as password hashing and SSH key authentication. This helps to ensure that virtual machines are secure and protected from unauthorized access.
+4.  <strong>Standardization:</strong> Cloud-init provides a standardized way of configuring virtual machines, making it easier to manage and maintain infrastructure resources. This reduces the risk of configuration drift and helps to ensure consistency across virtual machines.</p>
+<h2 id="infrastructure-as-code">Infrastructure as Code<a class="headerlink" href="#infrastructure-as-code" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Infrastructure as Code (IaC) is a practice of defining and managing infrastructure resources such as virtual machines, networks, and storage using machine-readable configuration files. It allows for automated provisioning, deployment, and scaling of infrastructure resources, enabling organizations to treat their infrastructure as software. This approach increases efficiency, reduces errors, and facilitates collaboration among teams.</li>
+<li>AWS CloudFormation: A service that allows users to define and manage infrastructure resources in AWS using YAML or JSON templates.</li>
+<li>Azure Resource Manager: A service that enables users to define and manage infrastructure resources in Azure using JSON templates.</li>
+<li>Google Cloud Deployment Manager: A service that allows users to define and manage infrastructure resources in Google Cloud Platform using YAML or Python templates.</li>
+<li>HashiCorp Terraform: A tool that provides a declarative way to define and manage infrastructure resources across multiple cloud providers and on-premises environments.</li>
+<li>Ansible: An open-source automation tool </li>
+</ul>
+<h2 id="virtualization">Virtualization<a class="headerlink" href="#virtualization" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Virtualization is the process of creating a virtual version of a physical resource, such as a server, storage device, or network, using software. Virtualization enables multiple virtual resources to run on a single physical resource, which can improve resource utilization, increase flexibility, and reduce costs. Examples of virtualization include server virtualization, network virtualization, and storage virtualization.</li>
+</ul>
+<h3 id="hypervisor">Hypervisor<a class="headerlink" href="#hypervisor" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The hypervisor is a piece of software that creates and manages virtual machines on a physical host. It abstracts the underlying physical resources and presents them as virtual resources to the guest operating systems running on the virtual machines. The hypervisor also manages the allocation of physical resources to virtual machines, ensuring that each virtual machine has access to the resources it needs to run.
+![[Pasted image 20230407192414.png]]</li>
+</ul>
+<h4 id="type-1">Type 1<a class="headerlink" href="#type-1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Type 1 hypervisors:</strong> Also known as bare-metal hypervisors, Type 1 hypervisors run directly on the host's hardware, without the need for an underlying operating system. They provide direct access to the physical resources, such as CPU, memory, and storage, and can support multiple guest operating systems running on virtual machines. Examples of Type 1 hypervisors include VMware ESXi, Microsoft Hyper-V, and Citrix Hypervisor.</li>
+</ul>
+<h4 id="type-2">Type 2<a class="headerlink" href="#type-2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Type 2 hypervisors:</strong> Also known as hosted hypervisors, Type 2 hypervisors run on top of an existing operating system, such as Windows, Linux, or macOS. They rely on the underlying operating system to manage access to the physical resources and provide virtualization capabilities to guest operating systems running on virtual machines. Examples of Type 2 hypervisors include Oracle VirtualBox, VMware Workstation, and Parallels Desktop.</li>
+</ul>
+<h3 id="hyperscalers">Hyperscalers<a class="headerlink" href="#hyperscalers" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A hyperscaler is a cloud service provider that operates at a massive scale, providing cloud-based services to millions of users worldwide. Examples include Amazon Web Services, Microsoft Azure, Google Cloud Platform, and IBM Cloud. They offer massive amounts of compute, storage, and network resources at low costs, thanks to economies of scale and efficient resource utilization.</li>
+</ul>
+<h2 id="usage-models">Usage models<a class="headerlink" href="#usage-models" title="Permanent link">&para;</a></h2>
+<h3 id="public-vs-privat-cloud">Public vs. Privat Cloud<a class="headerlink" href="#public-vs-privat-cloud" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Private Cloud:</strong> A private cloud is a cloud computing environment that is owned, operated, and dedicated to a single organization. Private clouds can be located on-premises or hosted by a third-party service provider. They are typically used by organizations that require more control over their computing resources, greater customization, and higher levels of security and privacy. Private clouds are not shared with other organizations, and access is restricted to authorized personnel.</p>
+</li>
+<li>
+<p><strong>Public Cloud:</strong> A public cloud is a cloud computing environment that is owned and operated by a third-party cloud provider and is available to the general public or a large industry group. Public clouds are typically used by organizations that require high scalability, rapid deployment, and lower costs. Public clouds are shared with other organizations and can be accessed over the internet. Access is usually provided through a web-based interface or API, and pricing is typically based on usage.</p>
+</li>
+<li>
+<p><strong>Hyprid Cloud:</strong> A hybrid cloud is a cloud computing environment that combines both public and private cloud resources. It allows companies to leverage the benefits of both cloud models, such as the scalability and cost-effectiveness of the public cloud, while also maintaining control over sensitive data and applications in a private cloud. This enables businesses to optimize their IT infrastructure and resources to meet their specific needs and requirements.</p>
+</li>
+</ol>
+<h2 id="service-models">Service models<a class="headerlink" href="#service-models" title="Permanent link">&para;</a></h2>
+<h3 id="cloud-system-layers">Cloud-System Layers<a class="headerlink" href="#cloud-system-layers" title="Permanent link">&para;</a></h3>
+<ul>
+<li>![[Infrastructure as a Service (IaaS)]]</li>
+<li>![[Platform as a Service (PaaS)]]</li>
+<li>![[Function as a Service (FaaS)]]</li>
+<li>![[Software as a Service (SaaS)]]</li>
+</ul>
+<h2 id="cloud-migrations-models">(Cloud-) Migrations models<a class="headerlink" href="#cloud-migrations-models" title="Permanent link">&para;</a></h2>
+<p>Migration models are strategies for moving an organization's data, applications, and infrastructure from one environment to another. There are several migration models, including lift and shift, re-platforming, and refactoring.</p>
+<ol>
+<li>
+<p>Lift and shift: This model involves moving an application or system from one environment to another without making any significant changes to its architecture or functionality. This means the application or system will function in the same way as before but on a different infrastructure. It is often used when the primary objective is to migrate quickly and with minimal disruption.</p>
+</li>
+<li>
+<p>Re-platforming: This model involves migrating an application or system to a new environment with some changes made to its architecture or functionality. The aim of re-platforming is to take advantage of the features and benefits of the new environment. For example, migrating a system from on-premise to the cloud could involve changes to its architecture to make it more cloud-friendly.</p>
+</li>
+<li>
+<p>Refactoring: This model involves migrating an application or system to a new environment and making significant changes to its architecture and functionality to optimize it for the new environment. This approach often involves rewriting or redesigning parts of the application or system to take full advantage of the new environment's features and benefits. For example, migrating a monolithic application to a microservices architecture could involve significant changes to the application's design and functionality.</p>
+</li>
+</ol>
+<h2 id="storage-models">Storage models<a class="headerlink" href="#storage-models" title="Permanent link">&para;</a></h2>
+<h3 id="storage-service">Storage service<a class="headerlink" href="#storage-service" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Object Storage: Object storage is a type of storage architecture that manages data as objects, each with its own unique identifier, metadata, and data. Object storage is ideal for storing large amounts of unstructured data such as images, videos, audio files, and documents. Object storage is highly scalable and designed to be accessed over the network. (Amazon S3)</p>
+</li>
+<li>
+<p>Block Storage: Block storage is a type of storage architecture that stores data in fixed-sized blocks. Each block has its own address and can be accessed independently. Block storage is commonly used in enterprise applications such as databases and virtual machines. Block storage provides high performance and low latency, making it ideal for applications that require fast access to data. (Amazon Elastic Block Store)</p>
+</li>
+<li>
+<p>File Storage: File storage is a type of storage architecture that stores data as files in a hierarchical directory structure. File storage is commonly used in network-attached storage (NAS) systems and is ideal for storing data that needs to be shared across multiple users or applications. File storage provides a high level of compatibility with existing applications and operating systems. (Amazon Elastic File System)</p>
+</li>
+<li>
+<p>Tape Storage: Tape storage is a type of storage architecture that stores data on magnetic tape cartridges. Tape storage is commonly used for long-term data archiving and backup purposes, as tape cartridges can hold large amounts of data and are relatively inexpensive. Tape storage is less expensive than disk-based storage but slower to access, making it less suitable for applications that require fast data access. (AWS Storage Gateway-Virtual Tape Library)</p>
+</li>
+</ol>
+<h3 id="storage-type">Storage type<a class="headerlink" href="#storage-type" title="Permanent link">&para;</a></h3>
+<p>Hot, cold, and warm storage are terms used to describe different storage tiers based on the frequency and speed of access to data, as well as the cost of storage.</p>
+<ol>
+<li>
+<p><strong>Hot storage:</strong> refers to the highest performance and fastest access storage tier, where data is frequently accessed and needs to be available at all times. It is typically the most expensive storage tier, and is often used for critical workloads that require low latency and high throughput. Examples of hot storage include solid-state drives (SSDs) and high-performance block storage.</p>
+</li>
+<li>
+<p><strong>Cold storage:</strong>, on the other hand, is a low-cost storage tier used for data that is accessed infrequently or is rarely modified. It is suitable for data that can be stored offline or on tape, and is ideal for long-term archival purposes. Examples of cold storage include Amazon S3 Glacier and Amazon S3 Glacier Deep Archive.</p>
+</li>
+<li>
+<p><strong>Warm storage:</strong> is a middle ground between hot and cold storage, providing faster access than cold storage but at a lower cost than hot storage. It is suitable for data that is accessed periodically but not frequently, and is often used for backup and disaster recovery purposes. Examples of warm storage include Amazon S3 Standard-Infrequent Access (S3 Standard-IA) and Amazon EBS Throughput Optimized HDD (st1).</p>
+</li>
+</ol>
+<h3 id="persistent-and-volatile-storage">Persistent and volatile storage<a class="headerlink" href="#persistent-and-volatile-storage" title="Permanent link">&para;</a></h3>
+<p>Persistent and volatile storage are two types of storage used in computing, particularly in virtual instances.</p>
+<ul>
+<li>
+<p><strong>Persistent storage</strong> refers to non-volatile storage, which means that data is stored even when power is removed. This type of storage is used for long-term data storage and is typically slower than volatile storage. Examples of persistent storage include hard disk drives (HDDs) and solid-state drives (SSDs).</p>
+</li>
+<li>
+<p><strong>Volatile storage</strong>, on the other hand, refers to storage that is lost when power is removed. This type of storage is used for short-term data storage and is typically faster than persistent storage. Examples of volatile storage include random-access memory (RAM) and cache memory.</p>
+</li>
+</ul>
+<p>In the context of virtual instances, persistent storage is used for data that needs to be stored long-term, such as databases, files, and operating system images. Volatile storage, such as RAM, is used for running applications and storing data temporarily while the virtual instance is powered on.</p>
+<p>It is important to understand the difference between persistent and volatile storage in virtual instances, as it can affect the performance and availability of applications and data. For example, if a virtual instance relies solely on volatile storage, any data stored in RAM will be lost if the instance is shut down or restarted. Therefore, it is often necessary to use persistent storage to ensure that data is retained even if the instance is powered off or terminated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
